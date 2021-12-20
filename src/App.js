@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React from "react";
+import Poster from "./Component/Poster";
+import logo from "./assets/images/logo512.png";
 function App() {
+  // const dataInfo = {
+  //   text: "Hello",
+  //   img: logo,
+  //   title: "welcome",
+  // };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Poster
+      img={logo}
+      title="REACT"
+      text="The best thing since jQuery, Probably."
+    />
   );
 }
 
 export default App;
+// [
+//
+//   {
+//     text: "Hello",
+//     img: logo,
+//     title: "welcome",
+//   },
+//   {
+//     text: "Hello",
+//     img: logo,
+//     title: "welcome",
+//   },
+// ];
